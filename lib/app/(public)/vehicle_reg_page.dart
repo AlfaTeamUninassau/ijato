@@ -59,8 +59,7 @@ class _VehicleRegPage extends StatelessWidget {
                     SizedBox(width: 30),
                     SizedBox(
                       width: 300,
-                      child:
-                          CupertinoTextFieldExample(textFieldName: "xxx-xxxx"),
+                      child: TextFieldPrimary(textFieldName: "xxx-xxxx"),
                     ),
                   ],
                 ),

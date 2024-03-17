@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:ijato/app/components/appbar_home.dart';
 import 'package:ijato/app/components/avatar.dart';
-
 import 'package:ijato/app/components/logo.dart';
 import 'package:ijato/app/components/research_field.dart';
 
@@ -34,9 +34,10 @@ class _HomePage extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SizedBox(width: 100, height: 100, child: LogoImage()),
-                    SizedBox(width: 200),
+                    SizedBox(width: 150),
                     SizedBox(width: 100, height: 100, child: AvatarImage())
                   ],
                 ),
