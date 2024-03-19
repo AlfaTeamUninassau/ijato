@@ -3,17 +3,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class CupertinoTextFieldExample extends StatefulWidget {
+class TextFieldPrimary extends StatefulWidget {
   final String textFieldName;
 
-  const CupertinoTextFieldExample({super.key, required this.textFieldName});
+  const TextFieldPrimary({super.key, required this.textFieldName});
 
   @override
-  State<CupertinoTextFieldExample> createState() =>
-      _CupertinoTextFieldExampleState();
+  State<TextFieldPrimary> createState() => _TextFieldPrimaryState();
 }
 
-class _CupertinoTextFieldExampleState extends State<CupertinoTextFieldExample> {
+class _TextFieldPrimaryState extends State<TextFieldPrimary> {
   @override
   Widget build(BuildContext context) {
     return Center(
