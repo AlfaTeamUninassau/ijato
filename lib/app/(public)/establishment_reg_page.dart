@@ -26,8 +26,6 @@ class _EstablishmentReg extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-
     return Stack(
       children: [
         const BackgroundImage(),
@@ -35,53 +33,50 @@ class _EstablishmentReg extends StatelessWidget {
           child: SingleChildScrollView(
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 22.0),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const SizedBox(height: 15),
-                  const LogoImage(),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "nome"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "sobrenome"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "e-mail"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "telefone"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "senha"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "confirmar senha"),
-                  const SizedBox(height: 15),
-                  const Text(
+                  SizedBox(height: 15),
+                  LogoImage(),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "nome"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "sobrenome"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "e-mail"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "telefone"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "senha"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "confirmar senha"),
+                  SizedBox(height: 15),
+                  Text(
                     "Estabelecimento",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(color: Colors.white70),
                   ),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "CEP"),
-                  const SizedBox(height: 15),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "CEP"),
+                  SizedBox(height: 15),
                   Row(
                     children: [
                       SizedBox(
-                        width: size.width / 1.5,
-                        child: const TextFieldPrimary(textFieldName: "rua"),
+                        width: 300,
+                        child: CupertinoTextFieldExample(textFieldName: "rua"),
                       ),
-                      const SizedBox(width: 15),
+                      SizedBox(width: 15),
                       SizedBox(
-                        width: size.width / 5,
-                        child: const TextFieldPrimary(textFieldName: "N°"),
+                        width: 85,
+                        child: CupertinoTextFieldExample(textFieldName: "N°"),
                       ),
                     ],
                   ),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "nome"),
-                  const SizedBox(height: 15),
-                  const TextFieldPrimary(textFieldName: "CPF/CNPJ"),
-                  const SizedBox(height: 5),
-                  const Row(
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "nome"),
+                  SizedBox(height: 15),
+                  CupertinoTextFieldExample(textFieldName: "CPF/CNPJ"),
+                  SizedBox(height: 5),
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CheckBox(),
@@ -91,14 +86,14 @@ class _EstablishmentReg extends StatelessWidget {
                       )
                     ],
                   ),
-                  const SizedBox(height: 5),
-                  const ButtonPrimary(
+                  SizedBox(height: 5),
+                  ButtonPrimary(
                     color: Colors.blue,
                     buttonPrimaryName: "cadastrar",
-                    nextState: "/home_establishment",
+                    nextState: "/login",
                   ),
-                  const SizedBox(height: 10),
-                  const Row(
+                  SizedBox(height: 10),
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
@@ -111,7 +106,7 @@ class _EstablishmentReg extends StatelessWidget {
                       )
                     ],
                   ),
-                  const SizedBox(height: 15),
+                  SizedBox(height: 15),
                 ],
               ),
             ),
