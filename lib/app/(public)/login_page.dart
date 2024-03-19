@@ -37,9 +37,9 @@ class _LoginPage extends StatelessWidget {
               children: [
                 LogoImage(),
                 SizedBox(height: 20),
-                TextFieldPrimary(textFieldName: "login"),
+                CupertinoTextFieldExample(textFieldName: "login"),
                 SizedBox(height: 20),
-                TextFieldPrimary(textFieldName: "senha"),
+                CupertinoTextFieldExample(textFieldName: "senha"),
                 SizedBox(height: 20),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
